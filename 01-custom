@@ -1,1 +1,15 @@
-/etc/update-motd.d/01-custom
+#!/bin/sh
+echo "GENERAL SYSTEM INFORMATION"
+/usr/bin/screenfetch
+echo
+echo "SYSTEM DISK USEGE"
+export TERM=xterm; inxi -D
+echo
+echo "CURRENT WEATHER AT THE LOCATION"
+# Show wether information. Change the city name to fit your location
+ansiweather -l krakow
+echo
+echo -n "System date and time - " 
+/bin/date
+echo
+
