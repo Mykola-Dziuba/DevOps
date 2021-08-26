@@ -25,8 +25,8 @@ git -C /home/DevOps commit -m "backup-`date +\%d-\%m-\%Y`"
 git -C /home/DevOps push origin
 
 #Send mail whith raport
-mpack -s "Raport-backup-$title" /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt mykola.dziuba92@gmail.com
+mpack -s "Raport-backup-`date +\%d-\%m-\%Y`" /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt mykola.dziuba92@gmail.com
 
 #Delet raport
-rm raport-`date +\%d-\%m-\%Y`.txt
+rm /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt
 
