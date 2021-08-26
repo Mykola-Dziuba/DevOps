@@ -17,7 +17,7 @@ rm $title
 rclone sync remote:backup /home/DevOps/backup
 
 #Create raport
-tar -ztvf /home/DevOps/backup/$title > /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`  
+tar -ztvf /home/DevOps/backup/$title > /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt  
 
 #Add backup to github
 git -C /home/DevOps add .
