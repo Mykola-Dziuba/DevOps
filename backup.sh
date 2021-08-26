@@ -27,6 +27,5 @@ git -C /home/DevOps push origin
 #Send mail whith raport
 mpack -s "Raport-backup-`date +\%d-\%m-\%Y`" /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt mykola.dziuba92@gmail.com
 
-#Delet raport
-rm /home/DevOps/backup/raport-`date +\%d-\%m-\%Y`.txt
+
 
