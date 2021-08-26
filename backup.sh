@@ -27,4 +27,5 @@ git -C /home/DevOps add .
 git -C /home/DevOps commit -m "backup-`date +\%d-\%m-\%Y`"
 git -C /home/DevOps push origin
 
-
+#Create raport
+tar -ztvf /home/DevOps/backup/$title > raport-`date +\%d-\%m-\%Y`  
